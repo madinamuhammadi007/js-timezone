@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: linear-gradient( 135deg, #ac43cc 0%, #812ed3 100%);
+  color: #fff;
+}
+.contianer{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    background-color: #8c0ba9;
+    margin: 20px 30px; 
+    padding-bottom: 30px;
+    border-radius: 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35),
+                0 0 25px rgba(102, 126, 234, 0.45),
+                0 0 60px rgba(118, 75, 162, 0.25);
+    
+    
+}
+.flexitem{
+    background-color:  #925a9f;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px 20px;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35),
+                0 0 25px rgba(102, 126, 234, 0.45),
+                0 0 60px rgba(118, 75, 162, 0.25);
+    outline: 10px solid  #8d4b9c;
+    height: 890px;
+overflow: auto;
+
+}
+
+table , tr  , td , th{
+    border: 1px solid #b0afaf;
+    border-collapse: collapse;
+    padding: 8px;
+    text-transform: capitalize;
+    font-size: 12px;
+}
+th {
+    background-color: #953fa8;
+}
+#search{
+    width: 100%;
+    padding: 5px;
+    background-color: transparent;
+    margin-bottom: 10px;
+   border: 1px solid #b0afaf;
+   outline: none;
+   color: #fcfbfb;
+   font-size: 8px;
+}
+input::placeholder{
+    color: #fff;
+    font-size: 8px;
+}
+.banner h1{
+    border: 1px solid #9b4fac;
+    padding: 40px;
+    background-color: #9b4fac;
+    border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35),
+                0 0 25px rgba(102, 126, 234, 0.45),
+                0 0 60px rgba(118, 75, 162, 0.25);
+                cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+     font-size: 23px;
+    text-align: center;
+    
+}
+.banner h1:hover{
+    background-color: #9b44ae;
+    transform: scale(1.02);
+}
+.addbtn{
+    padding: 5px;
+    background-color: #8c0ba9;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   color: #fff;
+}
+.favorite h1{
+        border: 1px solid #9b4fac;
+    padding: 40px;
+    background-color: #9b4fac;
+    border-radius: 20px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35),
+                0 0 25px rgba(102, 126, 234, 0.45),
+                0 0 60px rgba(118, 75, 162, 0.25);
+                cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 30px;
+    text-transform: capitalize;
+    font-size: 23px;
+    text-align: center;
+}
+.favorite h1:hover{
+    background-color: #9b44ae;
+    transform: scale(1.02);
+}
+h2{
+    margin-bottom: 10px;
+}
+.favorite div{
+    margin-top: 20px;
+                text-decoration: none;
+  
+}
+#favoritetimezonelist li{
+       border: 1px solid #9b44ae;
+    margin-top: 20px;
+    text-transform: capitalize;
+    padding: 10px;
+    background-color: #9b4fac;;
+    border-radius: 10px;
+     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.35),
+                0 0 25px rgba(102, 126, 234, 0.45),
+                0 0 60px rgba(118, 75, 162, 0.25);
+                text-align: center;
+                list-style: none;
+
+}
+#currenttime {
+    font-size: 15px;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#currentdate {
+    font-size: 12px;
+    color: #f3e8ff;
+    text-align: center;
+}
+.removebtn{
+      padding: 5px;
+    background-color: #8c0ba9;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+   color: #fff;
+   margin: 5px 5px;
+}
+@media(max-width: 700px){
+    .contianer{
+        display: flex;
+        flex-direction: column;
+    }
+    .flexitem{
+        height: 500px;
+    }
+}
